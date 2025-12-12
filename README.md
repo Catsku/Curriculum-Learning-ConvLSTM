@@ -2,7 +2,7 @@
 
 Este projeto utiliza redes neurais ConvLSTM para previsão de precipitação baseada em dados de radar.
 
-##📂Dataset e Instalação
+## Dataset e Instalação
 
 Devido ao tamanho dos arquivos (tensores .pt e CSVs), a pasta `data/` não está incluída neste repositório.
 
@@ -23,8 +23,8 @@ IC_IFSP/
 ├── src/
 ├── .gitignore
 └── main.py
-
-## 📂 Estrutura de Arquivos
+```
+## Estrutura de Arquivos
 
 Abaixo está a descrição dos principais módulos e scripts do projeto contidos na pasta `models/ConvLSTM/train_eval_model/`:
 
