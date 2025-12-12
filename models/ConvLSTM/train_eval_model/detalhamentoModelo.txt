@@ -1,0 +1,23 @@
+Class ConvLSTMCell:
+ -Inicializa pesos e bias necessários para cada célula, contando com input gate, forget gate, candidate gate, output gate e define suas respectivas convoluções com dropOut.
+ - no metodo forward determina como ocorrerão os calculos e retornam como output os proximos hidden e cell state.
+
+Class ConvLSTM_Layer:
+ - Instancia um objeto de ConvLSTMCell
+ - Inicializa os primeiros cell e hidden state da camada
+ - Identifica o número de celulas necessárias para comportar os timestemps do input recebido
+ - Aplica recursividade para receber cada input em ordem cronologica em uma célula
+ - Cada célula:
+        - além de passar seu hidden state e cell state como novos valores iniciais das células seguintes na mesma camada
+        -também salva o seu hidden state em uma array para que seja passado como input para a célula correspondente na camada superior
+
+Class MultiLayerConvLSTM:
+-Utiliza a array layer_configs para fazer chamar uma mesma configuração para todos as células de um objeto ConvLSTM_Layer
+-As camadas superiores aumentam a quantidade de canais.
+-Cada um dos hidden state de células inferiores passam por uma LayerNorm antes de entrarem nas células superiores.
+-Uma ultima camada de 3 Convoluções 2D é realizada resultando em apenas um canal final.
+
+
+def create_conv_lstm_model:
+- passa as informações do layer_configs para instanciar um objeto ConvLSTM_Layer.
+

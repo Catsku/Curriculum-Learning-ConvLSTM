@@ -1,0 +1,13 @@
+Modelo,nash_sutcliffe_efficiency_mean,nash_sutcliffe_efficiency_std
+Persist 10min,0.24699374,0.7839718
+predict_10min,0.27549613,0.789379
+Persist 20min,-0.9359352,1.2921213
+predict_20min,0.24855188,0.29654187
+Persist 30min,-1.1668315,1.3069435
+predict_30min,0.12592702,0.31722775
+Persist 40min,-1.4638262,2.8727255
+predict_40min,0.14843957,0.43446693
+Persist 50min,-1.1134684,0.8626123
+predict_50min,0.08508201,0.34461132
+Persist 60min,-1.1906408,0.6764125
+predict_60min,0.36329946,0.3020892

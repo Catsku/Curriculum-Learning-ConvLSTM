@@ -1,0 +1,16 @@
+# --- Pastas ---
+
+data/
+GeradorImagensPrecipitacao/
+
+# --- Padrões essenciais para Python e PyCharm ---
+# Ignorar arquivos compilados (cache)
+__pycache__/
+*.py[cod]
+
+# Ignorar configurações locais do PyCharm/VS Code
+.idea/
+.vscode/
+
+
+.venv/

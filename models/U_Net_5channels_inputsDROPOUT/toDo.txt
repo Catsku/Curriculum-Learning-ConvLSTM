@@ -1,0 +1,12 @@
+OK-fazer NextTimestampDataset coletar timestamp do csv e associar ao registro correspondente no tensor.
+OK-Adaptar leitura dos dados em cada época para organizar os timestamps, garantindo que saiam vinculados corretamente depois de passar pelo modelo.
+OK-Implementar avaliação automática após treino utilizando o mesmo split do dataset.
+-fazer salvamento automático dos gráficos e exemplos da avaliação do modelo
+-Adaptar sequencias para ordenar pela média de precipitação ao invés do máx
+-OKsalvar sequencia de imagens separadas
+
+CONV LSTMs
+CONV3D
+
+
+Treinar autoencoder e com mesmo modelo prever 1 timestamp afrente.
